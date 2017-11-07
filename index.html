@@ -11,25 +11,28 @@
 
     <!-- Our CSS -->
     <style type="text/css">
-      .col {border: 1px solid black;}
+      .col {border: 1px inset #fff;}
     </style>
   </head>
   <body>
-    <!--First Method is to write in a list form-->
+    <!--Nav Bar: write tabs just like how you would write elements in a HTML list-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Nav Bar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <ul class="nav nav-pills mr-auto"> <!-- .mr-auto makes the searchbox align right -->
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Mission</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support Us</a>
+          </li>
+          <li class="nav-item dropdown"> <!-- This is a dropdown -->
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Events
             </a>
@@ -41,36 +44,13 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-    <!--Second method is just writing all the tabs
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand">Nav Bar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active"  href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Mission</a>
-        <a class="nav-link dropdown-toggle"  data-toggle="dropdown"  id="dropdown01" aria-haspopup="true" aria-expanded="false">Events</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item" href="#">Run</a>
-                <a class="dropdown-item" href="#">Walk</a>
-                <a class="dropdown-item" href="#">Fairs</a>
-              </div>
-        <a class="nav-item nav-link" href="#">Support Us</a>
-      </div>
+      <!--Search button -->
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button type="submit">Search</button>
+      </form>
     </div>
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button type="submit">Search</button>
-    </form>
-    </nav>-->
+  </nav>
 
     <!-- Jumbotron -->
     <div class="jumbotron">
@@ -78,6 +58,36 @@
       <p class="lead">This is a jumbotron. It calls attention to something that you want featured on a webpage.</p>
       <a class="btn btn-primary btn-lg" href="http://getbootstrap.com">Learn more</a>
     </div>
+
+    <!-- Cards -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card">
+            <img class="card-img-top" src="http://static1.squarespace.com/static/53cdd3f3e4b09b69bef6e0ba/53d6bcf6e4b04157ac3c6683/54219da3e4b0004bfbd4bcde/1465406424516/?format=1000w" alt="Card image" style="height: 170px;">
+            <div class="card-body">
+              <h4 class="card-title">Card with image</h4>
+              <p class="card-text">Description</p>
+              <a href="" class="btn btn-primary">Click me</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Card with links</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Subtitle</h6> <!-- .text-muted gives it the color, .mb-2 adds a margin-bottom -->
+              <p class="card-text">Or a guy who burns down a bar for the insurance money! I don't know what you did, Fry, but once again, you screwed up! Now all the planets are gonna start cracking wise about our mamas. Oh, I think we should just stay friends. Yes, I saw. You were doing well, until everyone died. But I know you in the future. I cleaned your poop. So I really am important? How I feel when I'm drunk is correct? You lived before you met me?! It's toe-tappingly tragic!</p>
+              <a class="card-link" href="">Thing 1</a>
+              <a class="card-link" href="">Thing 2</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="mx-4"/>
+    <h1 class="text-center">But there's more!</h1>
 
     <!-- Grid Layout -->
     <div class="container">
